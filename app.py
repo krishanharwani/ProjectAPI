@@ -21,4 +21,4 @@ def index():
         print(err)
         return "-1"
 
-app.run(debug=True, port=5555)
+app.run()
