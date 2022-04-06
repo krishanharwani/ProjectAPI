@@ -34,7 +34,7 @@ def updateCSV():
 
 @app.route('/getCSV/', methods=['GET', 'POST'])
 def getCsv():
-    df = pd.read_csv(f"{os.getcwd()}\\data.csv")
+    df = pd.read_csv(f"{os.getcwd()}/data.csv")
     resp = make_response(df.to_csv(index=False))
     resp.headers["Content-Disposition"] = "attachments; filename=data.csv"
     resp.headers["Content-Type"] = "text/csv"
