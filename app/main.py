@@ -5,13 +5,6 @@ import os
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret_key'
 
-try:
-    file = open('data.csv', 'a')
-    file.write("ph, Turbidity\n")
-    file.close()
-except Exception as err:
-    print(err)
-
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
