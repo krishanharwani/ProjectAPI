@@ -20,7 +20,3 @@ def index():
     except Exception as err:
         print(err)
         return "-1"
-
-        
-if __name__ == '__main__':
-    app.run()
