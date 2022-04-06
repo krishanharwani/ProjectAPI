@@ -7,7 +7,7 @@ app.config['SECRET_KEY'] = 'secret_key'
 
 try:
     file = open('data.csv', 'a')
-    file.write("PH, TURBUDITY\n")
+    file.write("ph,Turbidity\n")
     file.close()
 except Exception as err:
     print(err)
