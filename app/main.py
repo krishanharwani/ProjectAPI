@@ -8,7 +8,7 @@ def index():
     return "App is Running..."
 
 @app.route('/updateCSV/', methods=['GET', 'POST'])
-def index():
+def updateCSV():
     data = request.args.get('data')
     print(data)
     try:
