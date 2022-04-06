@@ -3,11 +3,11 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
     return "App is Running..."
 
-@app.route('/updateCSV/')
+@app.route('/updateCSV/', methods=['GET', 'POST'])
 def index():
     data = request.args.get('data')
     print(data)
