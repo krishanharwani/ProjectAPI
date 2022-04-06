@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "App is Running"
-    
+    return "App is Running..."
+
 @app.route('/updateCSV/')
 def index():
     data = request.args.get('data')
